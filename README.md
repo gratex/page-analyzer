@@ -32,6 +32,8 @@ Go to [install page](https://gratex.github.io/page-analyzer/favelets/analyzer/in
 - Inline Scripts
 - Languages
 - H37 - Using alt attributes on img elements
+- Access-Control-* headers (CORS)
+
 - .... see source code please
 
 ## History
@@ -39,3 +41,19 @@ Horror code. This is one of my (ainthek) very very old projects. Was supporting 
 
 ## Future
 Rewrite, reuse other algorithms, and add more detections, support node.js server side usage as well.
+
+## Contribute
+
+any contributions are welcomed, including links to similar solutions or other detection algorithms
+
+To contribute:
+
+- bump version to stub.js
+- add detector to code2.js
+- try to add test data to sample1.html
+
+Run locally (for example):
+
+	http-server -c-1 --cors
+	open http://localhost:8080/favelets/analyzer/install.html
+

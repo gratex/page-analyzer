@@ -781,6 +781,19 @@
                     }
                 }
                 return banners.length ? [msg(1, "Client Banners Found", banners)] : [msg(0, "No Client Banner Found")];
+            },
+            "CORS": function(){
+                var headers = _dp.getHeaders(),
+                    corsHeaders = $.grep(headers, function(header) {
+                        return (/^Access-Control/gi.test(header));
+                    });
+                var msgs;
+                if (corsHeaders.length) {
+                    msgs = [msg(1, "CORS Headers Found", corsHeaders)];
+                } else {
+                    msgs = [msg(0, "No CORS Headers Found", corsHeaders)];
+                }
+                return msgs;
             }
         };
         var markup = {
