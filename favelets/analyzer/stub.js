@@ -35,7 +35,7 @@
                     wait();\
                 } ());\x3C/script>\
                 </body></html>';
-        d = w.document;
+        var d = w.document;
         d.write(markup);
         d.close();
     }
